@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical Fill Example</title>
+    <style>
+        html, body, .container { 
+            height: 100%; 
+            margin: 0; 
+            padding: 0; 
+        } 
+        
+        .container { 
+            display: grid; 
+            height: 100vh;
+            grid-template-rows: 60px 1fr 60px; 
+        } 
+        
+        .header { 
+            text-align: center; 
+        } 
+        
+        .content-body { 
+            background-color: forestgreen; 
+            margin: 0; 
+            padding: 0; 
+            overflow-y: auto; 
+        } 
+        
+        .footer { 
+            text-align: left; 
+        } 
+        
+        .header, .footer { 
+            background: steelblue; 
+            border: 1px solid black; 
+            margin: 0; 
+            padding: 0; 
+        }
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <div class="header"> 
+            <h1>Example Vertical Fill</h1> 
+        </div> 
+        <div class="content-body"> 
+            <p>Here is some content in the main section</p> 
+        </div> 
+        <div class="footer"> 
+            <p>This is the footer</p> 
+        </div> 
+    </div> 
+</body> 
+</html>
+
